@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        x = 1; //variable
+        y = 1;
+        document.write(x + y + "<br>");
+        x=1000;
+        document.write(x + y);     
+        //1=2;
+        // variable(변수) vs constant(상수)
+        alert(
+            name+" walked through the garden, "+ 
+            "where "+name+"’s favorite flowers bloomed,"+ 
+            "and "+name+" smiled at the peaceful scene."
+        )
+        name = '동성';
+        //변수를 사용할 떄는 가급적으로는 var을 붙이는게 좋다.
+    </script>
+     <div id="output"></div> <!-- 출력할 위치 -->
+
+     <script>
+         // 출력할 요소를 가져옴
+         const outputDiv = document.getElementById('output');
+ 
+         // 변수 정의
+         let x = 1;
+         let y = 1;
+ 
+         // 첫 번째 결과 출력
+         outputDiv.innerHTML += (x + y) + "<br>"; // 줄바꿈 포함
+ 
+         // 변수 값 변경
+         x = 1000;
+ 
+         // 두 번째 결과 출력
+         outputDiv.innerHTML += (x + y) + "<br>"; // 줄바꿈 포함
+     </script>
+</body>
+</html>
